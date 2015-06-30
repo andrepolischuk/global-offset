@@ -1,0 +1,21 @@
+{
+  "name": "global-offset",
+  "description": "Element global offset",
+  "version": "0.0.0",
+  "keywords": [
+    "global",
+    "offset"
+  ],
+  "repository": "andrepolischuk/global-offset",
+  "devDependencies": {
+    "babel": "^5.5.6"
+  },
+  "main": "index.es5.js",
+  "scripts": {
+    "transpile": "babel index.js > index.es5.js",
+    "prepublish": "npm run transpile",
+    "postpublish": "rm -rf *.es5.js"
+  },
+  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
+  "license": "MIT"
+}
