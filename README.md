@@ -1,4 +1,4 @@
-# global-offset
+# global-offset [![Build Status][travis-image]][travis-url]
 
   > Element global offset
 
@@ -22,3 +22,6 @@ offset(el); // {left: 150, top: 0}
 ## License
 
   MIT
+
+[travis-url]: https://travis-ci.org/andrepolischuk/global-offset
+[travis-image]: https://travis-ci.org/andrepolischuk/global-offset.svg?branch=master
