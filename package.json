@@ -1,8 +1,9 @@
 {
   "name": "global-offset",
   "description": "Element global offset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "keywords": [
+    "element",
     "global",
     "offset"
   ],
