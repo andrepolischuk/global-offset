@@ -1,8 +1,8 @@
 # global-offset [![Build Status][travis-image]][travis-url]
 
-  > Element global offset
+> Element global offset
 
-  Calculate offset of element with any `position` property
+Calculate offset of element with any `position` property
 
 ## Install
 
@@ -15,13 +15,12 @@ npm install --save global-offset
 ```js
 var globalOffset = require('global-offset');
 var el = document.querySelector('.hello');
-
 globalOffset(el); // {left: 150, top: 0}
 ```
 
 ## License
 
-  MIT
+MIT
 
 [travis-url]: https://travis-ci.org/andrepolischuk/global-offset
 [travis-image]: https://travis-ci.org/andrepolischuk/global-offset.svg?branch=master
