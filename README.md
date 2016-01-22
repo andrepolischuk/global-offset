@@ -2,7 +2,7 @@
 
 > Element global offset
 
-Calculate offset of element with any `position` property
+Calculate offset of element with any `position` property.
 
 ## Install
 
@@ -13,10 +13,22 @@ npm install --save global-offset
 ## Usage
 
 ```js
-var globalOffset = require('global-offset');
-var el = document.querySelector('.hello');
-globalOffset(el); // {left: 150, top: 0}
+import offset from 'global-offset';
+
+offset(document.querySelector('.hello')); // {left: 150, top: 0}
 ```
+
+## API
+
+### offset(element)
+
+Return object with `top` and `left` offsets.
+
+#### element
+
+Type: `element`
+
+Element for calculate offsets.
 
 ## License
 
