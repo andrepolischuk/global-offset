@@ -1,6 +1,5 @@
-
-import offset from './index';
-import assert from 'assert';
+import test from 'ava';
+import offset from './index.es5';
 
 const parent = {
   offsetLeft: 50,
@@ -18,11 +17,9 @@ const children = {
   offsetParent: parent
 };
 
-describe('globalOffset(el)', () => {
-  it('should return global offset', () => {
-    assert(offset(parent).left === 50);
-    assert(offset(parent).top === 50);
-    assert(offset(children).left === 25);
-    assert(offset(children).top === 25);
-  });
+test(t => {
+  t.is(offset(parent).left, 50);
+  t.is(offset(parent).top, 50);
+  t.is(offset(children).left, 25);
+  t.is(offset(children).top, 25);
 });
