@@ -1,12 +1,9 @@
 export default function globalOffset(el) {
-  let left = 0;
-  let top = 0;
+  const { top, left } = el.getBoundingClientRect();
+  const { pageYOffset, pageYOffset } = window;
 
-  while (el) {
-    left += el.offsetLeft;
-    top += el.offsetTop;
-    el = el.offsetParent;
-  }
-
-  return {left, top};
+  return {
+    top: top + pageYOffset,
+    left: left + pageXOffset
+  };
 };
