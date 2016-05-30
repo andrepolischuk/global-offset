@@ -1,6 +1,6 @@
 {
   "name": "global-offset",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Element global offset",
   "main": "index.es5.js",
   "jsnext:main": "index.js",
