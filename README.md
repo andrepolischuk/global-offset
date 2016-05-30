@@ -1,4 +1,4 @@
-# global-offset
+# global-offset [![Build Status][travis-image]][travis-url]
 
 > Element global offset
 
@@ -39,6 +39,9 @@ Element for calculate offsets.
 ## License
 
 MIT
+
+[travis-url]: https://travis-ci.org/andrepolischuk/global-offset
+[travis-image]: https://travis-ci.org/andrepolischuk/global-offset.svg?branch=master
 
 [coordinates]: https://github.com/andrepolischuk/coordinates
 [is-pointer-inside]: https://github.com/andrepolischuk/is-pointer-inside

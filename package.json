@@ -9,6 +9,7 @@
     "index.es5.js"
   ],
   "scripts": {
+    "test": "eslint .",
     "prepublish": "babel index.js --out-file index.es5.js",
     "postpublish": "rimraf index.es5.js && git push --follow-tags"
   },
@@ -31,6 +32,9 @@
     "babel-cli": "^6.9.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.9.0",
+    "eslint": "^2.11.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
     "rimraf": "^2.5.2"
   }
 }
