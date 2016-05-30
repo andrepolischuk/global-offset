@@ -1,24 +1,36 @@
 {
   "name": "global-offset",
-  "description": "Element global offset",
   "version": "0.1.5",
+  "description": "Element global offset",
+  "main": "index.es5.js",
+  "jsnext:main": "index.js",
+  "files": [
+    "index.js",
+    "index.es5.js"
+  ],
+  "scripts": {
+    "prepublish": "babel index.js --out-file index.es5.js",
+    "postpublish": "rimraf index.es5.js && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrepolischuk/global-offset.git"
+  },
   "keywords": [
     "element",
     "global",
     "offset"
   ],
-  "repository": "andrepolischuk/global-offset",
+  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrepolischuk/global-offset/issues"
+  },
+  "homepage": "https://github.com/andrepolischuk/global-offset",
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.9.0",
     "rimraf": "^2.5.2"
-  },
-  "main": "index.es5.js",
-  "scripts": {
-    "prepublish": "babel index.js --out-file index.es5.js",
-    "postpublish": "rimraf index.es5.js && git push --follow-tags"
-  },
-  "author": "Andrey Polischuk <andre.polischuk@gmail.com>",
-  "license": "MIT"
+  }
 }
